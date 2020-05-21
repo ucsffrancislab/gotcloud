@@ -1390,6 +1390,7 @@ int String::vprintf(const char * format, va_list ap)
 
 void String::check_vsnprintf()
 {
+vsnprintfChecked = VSNPRINTF_IS_OK;
     if (vsnprintfChecked == VSNPRINTF_NOT_CHECKED)
     {
         char temp[100];
